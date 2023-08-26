@@ -16,3 +16,11 @@ def M(n):
 X = int(input("Enter a number: "))
 print("The McCarthy function gives a value of ", M(X))
 ______________________________________________________________________
+#using lambda function as argument
+def fun(f,n):
+  print (f(n))
+twice = lambda x: x*2
+thrice = lambda x: x*3
+fun(twice,5)
+fun(thrice,6)
+_______________________________________________________________________
