@@ -6,3 +6,13 @@ def fact(n):
     return n*(n-1)
 n = int(input("Enter value: "))
 print("The factorial of ",n,"is", fact(n))
+______________________________________________________________________
+#McCarthy's 91 function
+def M(n):
+  if(n> 100):
+    return n -10
+  else:
+    return M(M(n+11))
+X = int(input("Enter a number: "))
+print("The McCarthy function gives a value of ", M(X))
+______________________________________________________________________
