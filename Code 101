@@ -24,3 +24,16 @@ thrice = lambda x: x*3
 fun(twice,5)
 fun(thrice,6)
 _______________________________________________________________________
+#using lambda function to sum n natural numbers
+x = lambda: sum(range(1,11))
+print (x())
+_______________________________________________________________________
+#using lambda function as argument again
+def small(a,b):
+  if (a<b):
+    return a 
+  else:
+    return b
+sum = lambda x,y: x+y
+diff = lambda x,y: x-y
+print("Smaller number is", small(sum(-3,-5), diff(-1,-2)))
